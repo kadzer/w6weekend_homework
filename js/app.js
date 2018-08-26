@@ -1,4 +1,3 @@
-//things called after DOM is loaded happen here
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('#new-item-form');
   form.addEventListener('submit', handleFormSubmit);
