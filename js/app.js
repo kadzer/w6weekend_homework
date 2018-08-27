@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('#new-item-form');
   form.addEventListener('submit', handleFormSubmit);
-
+  document.getElementById("delete").onclick = deleteAll;
 });
 
 const handleFormSubmit = function(event){
@@ -20,4 +20,9 @@ const handleFormSubmit = function(event){
 
   const listDiv = document.querySelector('#drinklist');
   listDiv.appendChild(drinkUl);
+}
+
+const deleteAll = function(){
+  const listDiv = document.querySelector('#drinklist');
+  listDiv.innerHTML = "";
 }
